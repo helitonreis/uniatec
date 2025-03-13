@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6;
+            color: #333;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            border-radius: 50%;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            transition: background-image 1s ease-in-out;
+        }
+        .section:nth-child(odd) {
+            background-image: url('image1.jpg');
+        }
+        .section:nth-child(even) {
+            background-image: url('image2.jpg');
+        }
+        footer {
+            background-color: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/IATEC_logo.jpg" alt="Logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="primeiros_passos.html">Primeiros Passos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section">Seção 1</div>
+        <div class="section">Seção 2</div>
+        <div class="section">Seção 3</div>
+        <div class="section">Seção 4</div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Minha Empresa</p>
+    </footer>
+</body>
+</html>
